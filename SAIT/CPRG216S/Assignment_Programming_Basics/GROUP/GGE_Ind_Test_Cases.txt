@@ -13,7 +13,6 @@ Enter Your Resident Province (ie; AB): AB
 Thank You! 
 Total Amount Due Now: $205.44
 
-
 Test 2: 
 
 Welcome to Global Energy Bill Calculator!
@@ -28,7 +27,6 @@ Enter Your Resident Province (ie; AB): BC
 
 Thank You! 
 Total Amount Due Now: $221.82
-
 
 Test 3: 
 
