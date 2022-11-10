@@ -1,0 +1,44 @@
+﻿Test #1:
+
+Welcome to Global Energy Bill Calculator!
+
+Enter Account Number: 123456
+Enter the Month (ie, January, Enter 1): 2
+Enter Electricity Plan (EFIR or EFLR): EFIR
+Enter the Amount of Electricity Used (in KWH): 500
+Enter Natural Gas Plan (GFIR or GFLR): GFIR
+Enter the Amount of Natural Gas Used (in GJ): 700
+Enter Your Resident Province (ie; AB): AB
+
+Thank You! 
+Total Amount Due Now: $205.44
+
+Test 2: 
+
+Welcome to Global Energy Bill Calculator!
+
+Enter Account Number: 456789
+Enter the Current Month (ie, January, Enter 1): 4
+Enter Electricity Plan (EFIR or EFLR): EFLR
+Enter the Amount of Electricity Used (in KWH): 700
+Enter Natural Gas Plan (GFIR or GFLR): GFLR
+Enter the Amount of Natural Gas Used (in GJ): 650
+Enter Your Resident Province (ie; AB): BC
+
+Thank You! 
+Total Amount Due Now: $221.82
+
+Test 3: 
+
+Welcome to Global Energy Bill Calculator!
+
+Enter Account Number: 147852
+Enter the Month (ie, January, Enter 1): 11
+Enter Electricity Plan (EFIR or EFLR): EFIR
+Enter the Amount of Electricity Used (in KWH): 1100
+Enter Natural Gas Plan (GFIR or GFLR): GFLR
+Enter the Amount of Natural Gas Used (in GJ): 1320
+Enter Your Resident Province (ie; AB): NT
+
+Thank You! 
+Total Amount Due Now: $280.17
