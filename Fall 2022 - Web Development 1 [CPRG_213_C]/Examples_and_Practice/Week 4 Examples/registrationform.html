@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <title>Registration Form</title>
+</head>
+<body>
+    <h1>Please enter the required data</h1>
+
+    <form action="process.php" method="post">
+
+        <fieldset>
+            <legend>Application Form</legend>
+
+        <!--registration table-->
+        <table border="1px solid black;">
+            <tr>
+                <th>Input</th>          
+                <th>Info</th>         
+            
+            </tr>
+            <tr><td><label>Full Name</label></td><td><input type="text" size="25" autofocus id="fullname" name="fullname"/></td></tr>
+            <tr><td><label>Street Address</label></td><td><input type="text" size="30" id="address" name="address" /></td></tr>
+            <tr><td><label>Postal Code</label></td><td><input type="text" size="7" id="postalcode" name="postalcode"/></td></tr>
+            <tr><td><label>Province</label></td>
+                
+                
+                <td><select id="province" name="province">
+                    <option value="AB">Alberta</option>
+                    <option value="BC">British Columbia</option>
+                    <option value="SK">Saskatchewan</option>
+                    <option value="MB">Manitoba</option>
+                    <option value="ON">Ontario</option>
+                    <option value="PQ">Quebec</option>
+                    <option value="NB">New Brunswick</option>
+                    <option value="NS">Nova Scotia</option>
+                    <option value="NL">Newfoundland</option>
+                    <option value="PE">Prince Edward Island</option>
+                    </select></td></tr>
+        </table>
+        <br>
+        <!--Radio Buttons 'name' must be the same for all radio buttons in a group-->
+        <h3>Please Enter the following information</h3>
+        <label>Do you own your home?</label><input type="radio" name="reside" value="yes" >Yes&nbsp;&nbsp;<input type="radio" name="reside" value="no">No<br>
+        <h3>Check if you own any of the following</h3>
+        <!--Checkboxes each have unique names-->
+        <ul>
+            <li><input type="checkbox" name="car" value="car" >Car</li>
+            <li><input type="checkbox" name="truck" value="truck">Truck</li>
+            <li><input type="checkbox" name="rv" value="rv">RV</li>
+            
+        </ul>
+
+        <h3>Any Comments you wish to add</h3>
+        <textarea name="comments" cols="15" rows="4">Enter Comments</textarea>
+       <br>
+
+        <input type="submit" value="Register" />
+
+        
+    </fieldset>
+    </form>
+
+</body>
+</html>

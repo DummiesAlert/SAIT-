@@ -1,0 +1,56 @@
+.flexbox-container 
+
+{
+
+    display: flex; 
+    justify-content: space-around;
+
+}
+
+.flexbox-item 
+
+{
+
+    height: 50px;
+    margin: 10px; 
+    border: 3px solid black; 
+    background-color: white;
+
+}
+
+.flexbox-item-1 
+
+{
+
+    min-height: 100px; 
+
+}
+
+.flexbox-item-2 
+
+{
+
+    min-height: 200px; 
+
+}
+
+/*
+
+    flex-direction: ;
+    flex-grow: ; 
+    order: ; 
+    display:';
+    flex-wrap: ; 
+    flex-shrink: ; 
+    flex-basis: ; 
+    flex-flow: ; 
+    justify-content: ; 
+    flex: ; 
+    align-self: ; 
+    align-items: ; 
+    align-center: ; 
+    gap: ; 
+    row-gap: ; 
+    column-gap: ; 
+
+*/

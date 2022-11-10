@@ -1,0 +1,107 @@
+body 
+
+{
+    font-family: "Lucida Sans", #00376c;
+    width: 600px, center;
+
+}
+
+.anchor
+
+{
+
+    color: #00376c;
+    text-decoration: none;
+    
+}
+
+.hover
+
+{
+
+    text-decoration: underline;
+
+}
+
+h2
+
+{
+
+    text-align: center;
+    border-bottom: solid, 2px;
+    color: #7b7b7b;
+
+}
+
+h3
+
+{
+
+    color: #1577ff;
+    border-bottom: solid, 2px, #1577ff;
+    display: inline;
+
+}
+
+header
+
+{
+
+    text-align: center;
+    background-color: #c7e3ff;
+    margin-bottom: 40px;
+    border-bottom: solid, 6px,#7b7b7b;
+    line-height: 80px;
+
+}
+
+footer 
+
+{
+
+    text-align: center;
+    background-color: #c7e3ff;
+    margin-bottom: 40px;
+    padding: 10px;
+    font-style: italic; 
+
+}
+
+.services p
+
+{
+
+    font-style: italic; 
+
+}
+
+.services
+
+{
+
+    padding: 10px, 15px;
+    margin-bottom: 40px;
+    background-color: #e7e7e7
+
+}
+
+.story
+
+{
+
+    padding: 10px, 15px;
+    margin-bottom: 40px;
+    background-color: #e7e7e7
+
+}
+
+
+.locations
+
+{
+
+    padding: 10px, 15px;
+    margin-bottom: 40px;
+    background-color: #e7e7e7
+
+} 
