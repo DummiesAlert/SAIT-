@@ -123,7 +123,7 @@ footer
 - Anchors in the header will be 18px.
 - The logo in the header will be 30px tall and wide, with 10px of space on all sides.
 - The top-level heading and the links in the header will have a line-height of 50px to center them within the header.
-There will be enough space between the page heading and the links so the last link is flush with the edge of the page. (HINT: Guess-and-check method can be useful here!)
+- There will be enough space between the page heading and the links so the last link is flush with the edge of the page. (HINT: Guess-and-check method can be useful here!)
 - There will be 15px of space between each link.
 - The text in the footer will be centered, with 15px of space between the content and the edge of the footer.
 */
@@ -189,14 +189,6 @@ header h1
 
 }
 
-main 
-
-{
-
-    border: 1px solid black;
-
-}
-
 #fixed-width.flex
 
 {
@@ -211,7 +203,8 @@ footer
 {
 
     text-align: center; 
-    margin: 15px; 
+    margin: 15px;
+ 
 
 }
 
@@ -286,7 +279,7 @@ img
 
 {
 
-    font-style: bold; 
+    font-weight: bold; 
     width: 70px; 
     text-align: right; 
     margin-right: 15px; 
@@ -299,8 +292,7 @@ img
 
     background-color: lightgrey; 
     height: 140px; 
-    position: fixed;
-    position: bottom 30px; 
+    position: fixed; bottom: 30px; 
 
 }
 
@@ -308,10 +300,9 @@ img
 
 {
 
-    position: fixed;
-    position: bottom 10px; 
     margin-left: 15px;
     margin-bottom: 15px; 
+    position: fixed; bottom: 10px; 
 
 }
 
@@ -344,7 +335,9 @@ label
 
 {
 
-    display: bold center; 
+    display: fixed; 
+    font-weight: bold; 
+    text-align: center; 
 
 }
 
@@ -363,11 +356,9 @@ button
 
     height: 21px; 
     width: 100px; 
-    border: 1px grey white; 
+    border: 1px grey white;
+    margin-top: 30px;  
     border-radius: 4px; 
-
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-family: 'Roboto', sans-serif;
-    font-weight: 400;
+    float: right; 
 
 }
