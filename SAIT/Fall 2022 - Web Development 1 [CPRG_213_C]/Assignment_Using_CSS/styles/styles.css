@@ -60,8 +60,15 @@ h2
 
 {
 
-    font-size: 24px; 
-    padding-bottom: 15px; 
+    font-size: 24px;
+
+}
+
+h2, p  
+
+{
+ 
+    margin-bottom: 15px; 
 
 }
 
@@ -88,14 +95,6 @@ header > a
     color: black; 
 
 } 
-
-p 
-
-{
-
-    margin-bottom: 15px; 
-
-}
 
 h3 
 
