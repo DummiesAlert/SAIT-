@@ -1,7 +1,0 @@
-Welcome to Circle Phones' Profit Calculator
-Enter Product Number 1-5, or Enter 0 to STOP: 5
-Enter Quantity Sold: 3
-Enter Product Number 1-5, or Enter 0 to STOP: 1
-Enter Quantity Sold: 2
-Enter Product Number 1-5, or Enter 0 to STOP: 0
-Your Total Profit for Today is:  395.37
