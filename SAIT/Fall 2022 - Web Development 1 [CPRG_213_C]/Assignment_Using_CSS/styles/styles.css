@@ -154,6 +154,14 @@ header a
 
 }
 
+a
+
+{
+
+    color: black;
+
+}
+
 header img 
 
 {
@@ -356,9 +364,18 @@ button
 
     height: 21px; 
     width: 100px; 
-    border: 1px grey white;
+    border: 1px grey solid;
+    background-color: white;
     margin-top: 30px;  
     border-radius: 4px; 
     float: right; 
+
+}
+
+button:hover
+
+{
+
+background-color: grey; 
 
 }
