@@ -82,7 +82,7 @@ def addPatientToList(patient_list):
     patient_list.append(P_info)
     
 
-if __name__=="__main__":
+if __name__ == "__main__":
     patient_list = readPatientsFile()    
     main()
 
