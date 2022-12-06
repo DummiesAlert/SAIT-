@@ -24,9 +24,15 @@ class Patient:
         
         Self.Age = Age
         
-    def Get_ID(Self):
+    def Get_ID(Self, ID_Prompt):
         
-        return Self.ID
+        if Self.ID == ID_Prompt:
+            
+            return True 
+        
+        elif Self.ID != ID_Prompt: 
+            
+            return False 
         
     def __str__(Self):
         

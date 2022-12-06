@@ -1,4 +1,4 @@
-import Patient_Class 
+import Test_Patient_Class 
 
 def enterPatientInfo():
     
@@ -7,7 +7,7 @@ def enterPatientInfo():
     Diagnosis = str(input("Enter Patient Diagnosis: "))
     Gender = str(input("Enter Patient Gender: "))
     Age = str(input("Enter Patient Age: "))
-    Info = Patient_Class.Patient(ID, Name, Diagnosis, Gender, Age)
+    Info = Test_Patient_Class.Patient(ID, Name, Diagnosis, Gender, Age)
     return Info
 
 def readPatientsFile():
@@ -18,7 +18,7 @@ def readPatientsFile():
     for Patient_Line in Patient_File: 
         
         Pat_Info = Patient_Line.rstrip().split("_")
-        Pat = Patient_Class.Patient(Pat_Info[0], Pat_Info[1], Pat_Info[2], Pat_Info[3], Pat_Info[4]) 
+        Pat = Test_Patient_Class.Patient(Pat_Info[0], Pat_Info[1], Pat_Info[2], Pat_Info[3], Pat_Info[4]) 
         Patient_List.append(Pat)
     
     Patient_File.close()
@@ -67,11 +67,11 @@ def displayPatientList():
         
 def writePatientsListToFile(Patient_List):
     
-    Patient_File = open(r"patients.txt", "w+")
+    Patient_File = open(r"patients.txt", "w")
     
     for ID2 in Patient_List:
         
-        Patient_Line = Patient_Class.Patient.formatPatientInfo(ID2)
+        Patient_Line = Test_Patient_Class.Patient.formatPatientInfo(ID2)
         Patient_File.write(Patient_Line)
     
     Patient_File.close()
@@ -83,7 +83,7 @@ def addPatientToList(Patient_List):
     
 def main(): 
     
-    Menu_Num = int(input("\nPatient Menu \n 0 - Return to Main Menu \n 1 - Display Patient's List \n 2 - Search for Patient by ID \n 3 - Add Patient \n 4 - Enter Patient Info \n Enter Option: "))
+    Menu_Num = int(input("\nPatient Menu \n 0 - Return to Main Menu \n 1 - Display Patient's List \n 2 - Search for Patient by ID \n 3 - Add Patient \n 4 - Edit Patient Info \n Enter Option: "))
     
     while Menu_Num != 0:
         
@@ -103,9 +103,10 @@ def main():
         elif Menu_Num == 4: 
             
             editPatientInfo()
+            writePatientsListToFile(Patient_List)
             displayPatientList() 
         
-        Menu_Num = int(input("\nPatient Menu \n 0 - Return to Main Menu \n 1 - Display Patient's List \n 2 - Search for Patient by ID \n 3 - Add Patient \n 4 - Enter Patient Info \n Enter Option: "))
+        Menu_Num = int(input("\nPatient Menu \n 0 - Return to Main Menu \n 1 - Display Patient's List \n 2 - Search for Patient by ID \n 3 - Add Patient \n 4 - Edit Patient Info \n Enter Option: "))
 
 if __name__ == "__main__":
     
