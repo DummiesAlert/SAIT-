@@ -4,7 +4,7 @@ What change would you make if you wanted the application to use IPv6 instead of 
 
 What are the three options available when selecting the protocol for a socket to use? (2 marks)
 
-- Ipv4, IPv6 and Unix
+- (Ipv4, IPv6), TCP and Unix(UTP) 
 
 What is the maximum message size your client can receive? (2 marks)
 
