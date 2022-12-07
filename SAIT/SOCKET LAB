@@ -4,7 +4,7 @@ What change would you make if you wanted the application to use IPv6 instead of 
 
 What are the three options available when selecting the protocol for a socket to use? (2 marks)
 
-- SOCK.STREAM SOCK.DGRAM SOCK.RAW
+- Ipv4, IPv6 and Unix
 
 What is the maximum message size your client can receive? (2 marks)
 
@@ -12,8 +12,8 @@ What is the maximum message size your client can receive? (2 marks)
 
 How could you change the client to allow it to connect to a server on a different host on the network? (2 marks)
 
-- 
+- InetAddress addr = InetAddress.getByNam("0.0.0.0"); 0000 is the other host ip. 
 
 What is the purpose of creating sockets inside applications? (2 marks)
 
-- 
+- The purpose of creating scokets inside applications is to exchange information between processes on the same machine or network and then have access to centralize the data. 
