@@ -1,0 +1,19 @@
+What change would you make if you wanted the application to use IPv6 instead of IPv4? (2 marks)
+
+- AF_INET for IPv4 and AF_INET6 for IPv6
+
+What are the three options available when selecting the protocol for a socket to use? (2 marks)
+
+- SOCK.STREAM SOCK.DGRAM SOCK.RAW
+
+What is the maximum message size your client can receive? (2 marks)
+
+- 1024 Bytes 
+
+How could you change the client to allow it to connect to a server on a different host on the network? (2 marks)
+
+- 
+
+What is the purpose of creating sockets inside applications? (2 marks)
+
+- 
