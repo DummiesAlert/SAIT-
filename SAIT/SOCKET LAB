@@ -16,4 +16,5 @@ How could you change the client to allow it to connect to a server on a differen
 
 What is the purpose of creating sockets inside applications? (2 marks)
 
-- The purpose of creating scokets inside applications is to exchange information between processes on the same machine or network and then have access to centralize the data. 
+- The purpose of creating sockets inside applications is to exchange data between processes on the same 
+  machine or network and then have access to centralize that data. 
