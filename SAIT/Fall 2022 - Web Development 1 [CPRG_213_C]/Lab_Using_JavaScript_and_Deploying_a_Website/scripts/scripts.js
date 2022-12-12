@@ -11,7 +11,7 @@ You are encouraged to use the provided naming convention for ease of review.
 
 // INSERT YOUR CODE HERE
 
-var modelName = document.getElementById("model-text").innerHTML
+var modelName = document.getElementById("model-text").innerHTML;
 var duration = 0;
 
 /****************** helper function ******************/
@@ -122,7 +122,7 @@ function changeDuration()
 
 {
 
-    duration = prompt("Enter the Duration")
+    duration = prompt("Enter the Duration");
     document.getElementById("duration-text").innerHTML = duration;
 
     recalculate();
