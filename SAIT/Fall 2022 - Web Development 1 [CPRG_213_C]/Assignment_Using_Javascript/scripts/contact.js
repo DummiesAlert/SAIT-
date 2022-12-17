@@ -2,3 +2,14 @@
 
 // hint: you can change the style of an element by modifying the value of that element's .style.fontSize, or by updating its .classList.
 
+var submitButton = document.getElementById("submit-button");
+function submit() {
+    const p = document.createElement("p");
+    p.innerHTML = "Thank you for your message!"
+    var form = document.getElementById("contact-page");
+    form.replaceWith(p);
+}
+
+if (submitButton) {
+    submitButton.addEventListener("click", submit);
+}
