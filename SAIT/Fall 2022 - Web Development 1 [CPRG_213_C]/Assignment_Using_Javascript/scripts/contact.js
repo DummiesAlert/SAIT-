@@ -14,3 +14,19 @@ function SUB()
     document.getElementsByTagName("p")[0].style.fontSize = "24px";
 
 }
+
+// var SUBBUTT = document.getElementById("submit-button");
+
+// function SUB() {
+
+//     const p = document.createElement("p");SUBBUTT.addEvent
+//     p.innerHTML = "THANK YOU FOR YOUR MESSAGE!";
+//     p.classList.add("contact")
+
+//     var INFO = document.getElementById("contact-page");
+//     INFO.replaceWith(p);
+// }
+
+// if (SUBBUTT) {
+//     SUBBUTT.addEventListener("click", SUB);
+// }
