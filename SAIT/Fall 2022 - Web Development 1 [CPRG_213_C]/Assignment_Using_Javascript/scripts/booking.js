@@ -23,46 +23,78 @@ var HALF = document.getElementById("half");
 // when the day buttons are clicked, we will apply the "clicked" class to that element, and update any other relevant variables. Then, we can recalculate the total cost.
 // added challenge: don't update the dayCounter if the same day is clicked more than once. hint: .classList.contains() might be helpful here!
 
-function Update(DBUTT) { //Day Button
+function Update(DBUTT) //Day Button
+
+{ 
     console.log(NOD);
 
-    if (DBUTT.classList.contains("clicked")){
+    if (DBUTT.classList.contains("clicked"))
+    
+    {
+
         NOD = NOD;
+
     }
 
-    else{
+    else
+    
+    {
 
         NOD += 1;
-        DBUTT.classList.add("clicked");}
+        DBUTT.classList.add("clicked");
+    
+    }
 
     RECALCULATE();
 }
 
-if (MON) {
+if (MON) 
+
+{
+
     MON.addEventListener("click", Update.bind(null, MON));
+
 }
 
-if (TUE) {
+if (TUE) 
+
+{
+
     TUE.addEventListener("click", Update.bind(null, TUE));
+
 }
 
-if (WED) {
+if (WED) 
+
+{
+
     WED.addEventListener("click", Update.bind(null, WED));
+
 }
 
-if (THUR) {
+if (THUR) 
+
+{
+
     THUR.addEventListener("click", Update.bind(null, THUR));
+
 }
 
-if (FRI) {
+if (FRI) 
+
+{
+
     FRI.addEventListener("click", Update.bind(null, FRI));
+
 }
 
 /********* clear days *********/
 // when the clear-button is clicked, the "clicked" class is removed from all days, any other relevant variables are reset, and the calculated cost is set to 0.
 
 
-function CBUTT() { //Cancel Button
+function CBUTT() //Cancel Button
+
+{ 
     MON.classList.remove("clicked");
     TUE.classList.remove("clicked");
     WED.classList.remove("clicked");
@@ -71,39 +103,58 @@ function CBUTT() { //Cancel Button
     NOD = 0;
     T = 0;
     SETFULL();
+
 }
 
-if (C_Button) {
+if (C_Button) 
+
+{
+
     C_Button.addEventListener("click", CBUTT);
+
 }
-
-
 
 /********* change rate *********/
 // when the half-day button is clicked, set the daily rate to $20, add the "clicked" class to the "half" element, remove it from the "full" element, and recalculate the total cost.
 
-function SETHALF() {
+function SETHALF() 
+
+{
+
     PRATE = 20;
     HALF.classList.add("clicked");
     FULL.classList.remove("clicked");
     RECALCULATE();
+
 }
 
-if (HALF) {
+if (HALF) 
+
+{
+
     HALF.addEventListener("click", SETHALF);
+
 }
 
 // when the full-day button is clicked, the daily rate is set back to $35, the clicked class is added to "full" and removed from "half", and the total cost is recalculated.
 
-function SETFULL() {
+function SETFULL() 
+
+{
+
     PRATE = 35;
     FULL.classList.add("clicked");
     HALF.classList.remove("clicked");
     RECALCULATE();
+
 }
 
-if (FULL) {
+if (FULL) 
+
+{
+
     FULL.addEventListener("click", SETFULL);
+
 }
 
 // when the full-day button is clicked, the daily rate is set back to $35, the clicked class is added to "full" and removed from "half", and the total cost is recalculated.
@@ -111,10 +162,14 @@ if (FULL) {
 
                                 //WHAT?
 
-/********* calculate *********/
+/********* CALCULATE *********/
 // when a calculation is needed, set the innerHTML of the calculated-cost element to the appropriate value
 
-function RECALCULATE() {
+function RECALCULATE() 
+
+{
+
     T = NOD * PRATE;
     document.getElementById("calculated-cost").innerHTML = T;
+    
 }
