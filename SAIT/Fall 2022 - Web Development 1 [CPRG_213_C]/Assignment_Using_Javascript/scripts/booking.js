@@ -4,48 +4,47 @@
 // When do they need to be reset or updated?
 
 var CPD; //Cost Per Day
-var NODS; //Number of Days Selected
 var PRATE; //Price Rate
 var T; //Total Cost
-var C_Button = document.getElementById("Clear-Button") //To Reset Button Contents
+var C_Button = document.getElementById("clear-button") //To Reset Button Contents
 
 //Variables for Weekdays 
-var MON =  document.getElementById("Monday"); 
-var TUE =  document.getElementById("Tuesday");
-var WED =  document.getElementById("Wednesday");
-var THUR =  document.getElementById("Thursday");
-var FRI =  document.getElementById("Friday");
+var MON =  document.getElementById("monday"); 
+var TUE =  document.getElementById("tuesday");
+var WED =  document.getElementById("wednesday");
+var THUR =  document.getElementById("thursday");
+var FRI =  document.getElementById("friday");
 
 //Variables for Amount of the Day
-var FULL = document.getElementById("Full");
-var HALF = document.getElementById("Half");
+var FULL = document.getElementById("full");
+var HALF = document.getElementById("half");
 
 /********* colour change days of week *********/
 // when the day buttons are clicked, we will apply the "clicked" class to that element, and update any other relevant variables. Then, we can recalculate the total cost.
 // added challenge: don't update the dayCounter if the same day is clicked more than once. hint: .classList.contains() might be helpful here!
 
 if (MON) {
-    MON.addEventListener("Click", Update.bind(null, MON));
+    MON.addEventListener("click", Update.bind(null, MON));
 }
 
 if (TUE) {
-    TUE.addEventListener("Click", Update.bind(null, TUE));
+    TUE.addEventListener("click", Update.bind(null, TUE));
 }
 
 if (WED) {
-    WED.addEventListener("Click", Update.bind(null, WED));
+    WED.addEventListener("click", Update.bind(null, WED));
 }
 
 if (THUR) {
-    THUR.addEventListener("Click", Update.bind(null, THUR));
+    THUR.addEventListener("click", Update.bind(null, THUR));
 }
 
 if (FRI) {
-    FRI.addEventListener("Click", Update.bind(null, FRI));
+    FRI.addEventListener("click", Update.bind(null, FRI));
 }
 
 function Update(DBUTT) {
-    DBUTT.classList.add("Clicked");
+    DBUTT.classList.add("clicked");
     CPD += 1;
     RECALCULATE();
 }
@@ -55,18 +54,18 @@ function Update(DBUTT) {
 
 
 function CBUTT() {
-    MON.classList.remove("Clicked");
-    TUE.classList.remove("Clicked");
-    WED.classList.remove("Clicked");
-    THUR.classList.remove("Clicked");
-    FRI.classList.remove("Clicked");
+    MON.classList.remove("clicked");
+    TUE.classList.remove("clicked");
+    WED.classList.remove("clicked");
+    THUR.classList.remove("clicked");
+    FRI.classList.remove("clicked");
     CPD = 0;
     T = 0;
     SETFULL();
 }
 
 if (C_Button) {
-    C_Button.addEventListener("Click", CBUTT);
+    C_Button.addEventListener("click", CBUTT);
 }
 
 
@@ -76,26 +75,26 @@ if (C_Button) {
 
 function SETHALF() {
     PRATE = 20;
-    HALF.classList.add("Clicked");
-    FULL.classList.remove("Clicked");
-    recalculate();
+    HALF.classList.add("clicked");
+    FULL.classList.remove("clicked");
+    RECALCULATE();
 }
 
 if (HALF) {
-    HALF.addEventListener("Click", SETHALF);
+    HALF.addEventListener("click", SETHALF);
 }
 
 // when the full-day button is clicked, the daily rate is set back to $35, the clicked class is added to "full" and removed from "half", and the total cost is recalculated.
 
 function SETFULL() {
     PRATE = 35;
-    FULL.classList.add("Clicked");
-    HALF.classList.remove("Clicked");
+    FULL.classList.add("clicked");
+    HALF.classList.remove("clicked");
     RECALCULATE();
 }
 
 if (FULL) {
-    FULL.addEventListener("Click", SETFULL);
+    FULL.addEventListener("click", SETFULL);
 }
 
 
@@ -109,6 +108,5 @@ if (FULL) {
 
 function RECALCULATE() {
     T = CPD * PRATE;
-    T = document.getElementById("Calculated-Cost").innerHTML
+    T = document.getElementById("calculated-cost").innerHTML
 }
-
