@@ -3,8 +3,8 @@
 // Do any of these variables need to be initialized when the page is loaded? 
 // When do they need to be reset or updated?
 
-var CPD; //Cost Per Day
-var PRATE; //Price Rate
+var NOD = 0; //Cost Per Day
+var PRATE = 35; //Price Rate
 var T; //Total Cost
 var C_Button = document.getElementById("clear-button"); //To Reset Button Contents
 
@@ -23,9 +23,18 @@ var HALF = document.getElementById("half");
 // when the day buttons are clicked, we will apply the "clicked" class to that element, and update any other relevant variables. Then, we can recalculate the total cost.
 // added challenge: don't update the dayCounter if the same day is clicked more than once. hint: .classList.contains() might be helpful here!
 
-function Update(DBUTT) {
-    DBUTT.classList.add("clicked");
-    CPD += 1;
+function Update(DBUTT) { //Day Button
+    console.log(NOD)
+
+    if (DBUTT.classList.contains("clicked")){
+        NOD = NOD;
+    }
+
+    else{
+
+        NOD += 1;
+        DBUTT.classList.add("clicked");}
+
     RECALCULATE();
 }
 
@@ -53,13 +62,13 @@ if (FRI) {
 // when the clear-button is clicked, the "clicked" class is removed from all days, any other relevant variables are reset, and the calculated cost is set to 0.
 
 
-function CBUTT() {
+function CBUTT() { //Cancel Button
     MON.classList.remove("clicked");
     TUE.classList.remove("clicked");
     WED.classList.remove("clicked");
     THUR.classList.remove("clicked");
     FRI.classList.remove("clicked");
-    CPD = 0;
+    NOD = 0;
     T = 0;
     SETFULL();
 }
@@ -97,7 +106,6 @@ if (FULL) {
     FULL.addEventListener("click", SETFULL);
 }
 
-
 // when the full-day button is clicked, the daily rate is set back to $35, the clicked class is added to "full" and removed from "half", and the total cost is recalculated.
 
 
@@ -107,6 +115,6 @@ if (FULL) {
 // when a calculation is needed, set the innerHTML of the calculated-cost element to the appropriate value
 
 function RECALCULATE() {
-    T = CPD * PRATE;
+    T = NOD * PRATE;
     document.getElementById("calculated-cost").innerHTML = T;
 }

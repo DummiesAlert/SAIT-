@@ -13,7 +13,6 @@ You are discouraged from changing any provided CSS.
 
 */
 
-
 /************* site defaults *************/
 
 body {
@@ -171,7 +170,15 @@ footer {
     font-size: 18px;
 }
 
-.day-selector .blue-hover {
+.booking-page .flex 
+
+{
+
+    justify-content: center;
+
+}
+
+.booking-page .day-selector .blue-hover {
     margin-bottom: 12px;
     margin-right: 20px;
     width: 60px;
@@ -192,6 +199,7 @@ footer {
 
 .booking-page .fake-button {
     width: 200px;
+    margin: 0px auto; 
 }
 
 .booking-page .clicked {
@@ -209,11 +217,15 @@ footer {
 
 .contact{
     height: 420px;
+    text-align: center; 
 }
 
-.contact h2{
+.contact .flex
 
-    text-align: center;
+{
+
+    justify-content: center;
+
 }
 
 .contact label {
@@ -224,30 +236,24 @@ footer {
 
 .contact input, .contact textarea {
     width: 300px;
+    margin-bottom: 24px;
 }
 
 .contact textarea {
     height: 150px;
 }
 
-.contact input, .contact textarea, .blue-hover {
+.contact input, .contact textarea, .contact .blue-hover {
     font-family: inherit;
     line-height: 24px;
     font-size: 16px;
     border: 1px solid black;
 
-    
 }
-
-.contact input, .contact textarea {
-    
-    margin:auto; 
-    margin-bottom: 24px;
-}
-
  
-.blue-hover {
+.contact button {
     
-    width: 200px;
-    margin: auto; 
+    width: 306px;
+    margin-left: 176px; 
+    
 }
