@@ -2,17 +2,15 @@
 
 // hint: you can change the style of an element by modifying the value of that element's .style.fontSize, or by updating its .classList.
 
-var SUBBUTT = document.getElementById("submit-button");
+var SUBBUTT = document.getElementById("submit-button"); 
+SUBBUTT.addEventListener("click", SUB);
 
-function SUB() {
+function SUB()
 
-    const p = document.createElement("p");
-    p.innerHTML = "THANK YOU FOR YOUR MESSAGE!";
+{
 
-    var INFO = document.getElementById("contact-page");
-    INFO.replaceWith(p);
-}
+    console.log("Submit Attempted");
+    document.getElementsByTagName("main")[0].innerHTML = "<p>THANK YOU FOR YOUR MESSAGE!</p>";
+    document.getElementsByTagName("p")[0].style.fontSize = "24px";
 
-if (SUBBUTT) {
-    SUBBUTT.addEventListener("click", SUB);
 }
