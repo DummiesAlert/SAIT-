@@ -6,7 +6,7 @@
 var CPD; //Cost Per Day
 var PRATE; //Price Rate
 var T; //Total Cost
-var C_Button = document.getElementById("clear-button") //To Reset Button Contents
+var C_Button = document.getElementById("clear-button"); //To Reset Button Contents
 
 //Variables for Weekdays 
 var MON =  document.getElementById("monday"); 
@@ -108,5 +108,5 @@ if (FULL) {
 
 function RECALCULATE() {
     T = CPD * PRATE;
-    document.getElementById("calculated-cost").innerHTML = T
+    document.getElementById("calculated-cost").innerHTML = T;
 }
