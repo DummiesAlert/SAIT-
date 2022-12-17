@@ -24,7 +24,7 @@ var HALF = document.getElementById("half");
 // added challenge: don't update the dayCounter if the same day is clicked more than once. hint: .classList.contains() might be helpful here!
 
 function Update(DBUTT) { //Day Button
-    console.log(NOD)
+    console.log(NOD);
 
     if (DBUTT.classList.contains("clicked")){
         NOD = NOD;
