@@ -23,6 +23,12 @@ var HALF = document.getElementById("half");
 // when the day buttons are clicked, we will apply the "clicked" class to that element, and update any other relevant variables. Then, we can recalculate the total cost.
 // added challenge: don't update the dayCounter if the same day is clicked more than once. hint: .classList.contains() might be helpful here!
 
+function Update(DBUTT) {
+    DBUTT.classList.add("clicked");
+    CPD += 1;
+    RECALCULATE();
+}
+
 if (MON) {
     MON.addEventListener("click", Update.bind(null, MON));
 }
@@ -41,12 +47,6 @@ if (THUR) {
 
 if (FRI) {
     FRI.addEventListener("click", Update.bind(null, FRI));
-}
-
-function Update(DBUTT) {
-    DBUTT.classList.add("clicked");
-    CPD += 1;
-    RECALCULATE();
 }
 
 /********* clear days *********/
@@ -108,5 +108,5 @@ if (FULL) {
 
 function RECALCULATE() {
     T = CPD * PRATE;
-    T = document.getElementById("calculated-cost").innerHTML
+    document.getElementById("calculated-cost").innerHTML = T
 }
